@@ -1,0 +1,17 @@
+{
+  "name": "brycesharrits/fore-up-php-sdk",
+  "description": "PHP SDK for foreUp API",
+  "type": "library",
+  "require": {
+    "php": ">=5.3.0",
+    "guzzlehttp/guzzle": "7.4.x-dev"
+  },
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "Bryce Sharrits",
+      "email": "brycesharrits@gmail.com"
+    }
+  ],
+  "minimum-stability": "dev"
+}
