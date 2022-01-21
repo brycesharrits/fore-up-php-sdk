@@ -1,5 +1,7 @@
 <?php
 
+namespace ApiOperations;
+
 use GuzzleHttp\Client;
 
 class Authentication {

@@ -1,5 +1,7 @@
 <?php
 
+namespace Models;
+
 /**
  * Definition of Customer object.
  *
@@ -10,9 +12,11 @@
  * @property bool $opt_out_email
  * @property bool $opt_out_text
  * @property string $date_created
+ * @property array $contact_info
  */
-class Customer extends stdClass
+class Customer
 {
+
     public string $username;
     public string $company_name;
     public bool $taxable;
@@ -20,4 +24,10 @@ class Customer extends stdClass
     public bool $opt_out_email;
     public bool $opt_out_text;
     public string $date_created;
+    public array $contact_info;
+
+    public function __construct()
+    {
+        return $this;
+    }
 }
