@@ -7,11 +7,11 @@ use Models\Customer;
 
 class Customers
 {
+    public $token;
 
-    public function __construct()
+    public function __construct(string $token)
     {
-        $this->email = "devtesting"; // Normally this would come from an environment variable or config file
-        $this->password = "devtesting1"; // Normally this would come from an environment variable or config file
+        $this->token = $token;
     }
 
     /**
@@ -25,6 +25,7 @@ class Customers
         $client = new Client();
 
         $response = $client->request('POST', 'https://mobile.foreupsoftware.com/api_rest/index.php/courses/' . $courseId . '/customers', [
+            'auth' => $this->token,
             'body' => [
                 'data' => [
                     'type' => 'customers',
